@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog Home Pag</title>
     <link rel="stylesheet" href="index.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
       integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
       crossorigin="anonymous"
-    />
-
+    /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,11 +26,11 @@
         </div>
         <div class="nav">
           <ul>
-            <li class="home1"><p>Home</p></li>
-            <li><p>Statistics</p></li>
-            <li><p>Services</p></li>
-            <li><p>Dropdown</p></li>
-            <li><p>Contact Us</p></li>
+            <li class="home1"><a class="home2"  href="">Home</a></li>
+            <li class="nav-item"><a href="">Statistics</a></li>
+            <li class="nav-item"><a href="">Services</a></li>
+            <li class="nav-item"><a href="">Dropdown</a></li>
+            <li ><a href="">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -120,9 +120,10 @@
     </div>
     
       <div class="statistics">
-        <img src="./img/bg.jpg" alt="" />
+        
         <h2>Our Statistics</h2>
         <div class="second">
+          
           <div class="column">
             <div class="above">
               <p>8</p>
@@ -177,24 +178,32 @@
       </div>
       <div class="services-right">
         <div class="right">
-          <i class="fa fa-expand" aria-hidden="true"></i>
+          <div>
+            <i class="fa fa-expand" aria-hidden="true"></i>
           <h4>Grooming</h4>
           <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+          </div>
         </div>
         <div class="right">
-          <i class="fab fa-github"></i>
+          <div>
+            <i class="fab fa-github"></i>
           <h4>Grooming</h4>
           <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+          </div>
         </div>
         <div class="right">
-          <i class="far fa-heart"></i>
+          <div>
+            <i class="far fa-heart"></i>
           <h4>Adoption</h4>
           <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+          </div>
         </div>
         <div class="right">
-          <i class="fas fa-medkit"></i>
+          <div>
+            <i class="fas fa-medkit"></i>
           <h4>Veterinary Care</h4>
           <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -205,7 +214,7 @@
         <h2>Testimonials</h2>
       </div>
       <div class="statistics-under">
-        <div class="left-side">
+        <div class="left-side items">
           <p>
             "Sed ut perspiciatis unde omnis iste natus error sit volup tatem
             accus antium dolore tium."
@@ -213,7 +222,7 @@
           <img src="./img/te1.jpg" alt="" />
           <h4>- LOREM ISUM</h4>
         </div>
-        <div class="between">
+        <div class="between items">
             <p>
                 "Sed ut perspiciatis unde omnis iste natus error sit volup tatem
                 accus antium dolore tium."
@@ -221,7 +230,7 @@
             <img src="./img/te2.jpg" alt="">
             <h4>- UNDE OMNIS</h4>
         </div>
-        <div class="right-side">
+        <div class="right-side items">
             <p>
                 "Sed ut perspiciatis unde omnis iste natus error sit volup tatem
                 accus antium dolore tium."
@@ -315,14 +324,14 @@
           <form >
             <input  style="width: 100%;height:6vh;padding-left: 10px;margin-bottom: 15px;font-size: 16px;border: 1px solid rgb(210, 209, 209);" type="text" name="Name" placeholder="Name" required>
             <input  style="width: 100%;height:6vh;padding-left: 10px;margin-bottom: 15px;font-size: 16px;border: 1px solid rgb(210, 209, 209);" type="text" name="Email" placeholder="Email" required>
-            <input  style="width: 100%;height:15vh;padding-left: 10px;margin-bottom: 15px;font-size: 16px;text-align:start ;border: 1px solid rgb(210, 209, 209);" type="text" name="Message" placeholder="Message....." required>
-            <button  style="width: 100%;height:6vh;padding-left: 10px;background-color: #efa940;border: 0px;border-radius: 5px;color: white;font-size: 17px;" type="submit">Submit</button>
+             <textarea style="width:100%;border: 1px solid rgb(210, 209, 209);resize: none;" name="message" id="message" cols="30" rows="10" placeholder="Message...."></textarea>  
+            <button  class="btn-submit" type="submit">Submit</button>
           </form>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="footer-row">
+      
         <div class="footer-item">
           <h3>ABOUT US</h3>
           <p>Sed ut perspiciatis unde omnis iste <br> natus error sit.Error sit antium <br> dolorts remq hymue laud.</p>
@@ -353,20 +362,18 @@
           <h3>NEWSLETTER</h3>
           <p>Be the first to get latest news and offers! Sed ut perspiciatis unde omnis.</p>
           <form>
-            <div style="width:100%;height:6vh;display: flex;" class="footer-item-input">
-              <input style="width:75%;height: 6vh;padding-left: 15px;" type="text" name="Enter" placeholder="Enter and Email" required >
-              <button  style="width:25%;height:6vh;background-color: #ba7917;color: white;border: 0;" type="Submit" name="submit" >Submit</button>
-            </div>
+    
+              <input style="width:100%;"  type="text" name="Enter" placeholder="Enter and Email" required >
+              <button class="btn-submitt" type="Submit" name="submit" >Submit</button>
           </form>
           <h3>CONNECT WITH SOCIAL</h3>
           <div  class="footer-item-icon">
-            <i style="font-size: 40px;color: #3b5998;margin-right:15px;" class="fab fa-facebook-f"></i>
-            <i style="text-align: center;width: 35px;height: 35px;font-size: 20px;background-color: #1da1f2;margin-right:15px;color: white;" class="fab fa-twitter"></i>
-            <i style="font-size: 40px;color: #ea4c89;margin-right:15px;" class="fab fa-dribbble"></i>
-            <i style="font-size: 40px;color: #f44336;margin-right:15px;" class="fab fa-google-plus-g"></i>
+            <i style="display:inline-block;padding:0.5rem 0.7rem;color:white;background-color:#3b5998; " class="fab fa-facebook-f icon-fa"></i>
+            <i style="display:inline-block;padding: 0.5rem 0.5rem;background-color: #1da1f2;color: white;" class="fab fa-twitter"></i>
+            <i style="display:inline-block;padding: 0.5rem 0.5rem;background-color: #ea4c89;color: white;" class="fab fa-dribbble"></i>
+            <i style="display:inline-block;padding: 0.5rem 0.4rem;background-color: #f44336;color: white;" class="fab fa-google-plus-g"></i>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
